@@ -43,12 +43,12 @@ These three commands are the baseline expected to work before opening a PR.
 
 ## Troubleshooting
 
-### `npm ci` fails or hangs on `git+ssh` / missing SSH key
+### `npm ci` fails or hangs fetching a GitHub git dependency
 
-The lockfile contains at least one Git dependency resolved via an SSH URL
-(for example `git+ssh://git@github.com/...`). On fresh machines or in fork PR
-CI, there is typically **no SSH key**, so Git can prompt for credentials and
-appear “stuck”.
+Some dependencies (for example `@project-gauntlet/tools`) are pinned to a Git
+commit in a GitHub repository. On fresh machines or in some CI environments,
+Git may attempt to use SSH (or other git URL schemes) and prompt for
+credentials, which can look like the install is “stuck”.
 
 Recommended fix (repo-local, does not touch global git config):
 
