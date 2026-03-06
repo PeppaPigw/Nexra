@@ -48,9 +48,23 @@ path = 'src/calculator.tsx'
 type = 'inline-view'
 description = 'Calculator right under search bar'
 
+[[entrypoint]]
+id = 'clipboard-history'
+name = 'Clipboard History'
+path = 'src/clipboard_history.tsx'
+type = 'view'
+description = 'Text-only clipboard history'
+
+[[entrypoint]]
+id = 'clipboard-history-watcher'
+name = 'Clipboard History Watcher'
+path = 'src/clipboard_history_watcher.ts'
+type = 'entrypoint-generator'
+description = 'Background clipboard history recorder'
+
 [permissions]
 main_search_bar = ["read"]
-clipboard = ["write"]
+clipboard = ["read", "write"]
 
 [permissions.filesystem]
 read = [
