@@ -1,4 +1,4 @@
-# Gauntlet
+# Nexra (fork of Gauntlet)
 
 [![Discord](https://discord.com/api/guilds/1205606511603359785/widget.png?style=shield)](https://discord.gg/gFTqYUkBrW)
 
@@ -6,8 +6,25 @@
 
 Web-first cross-platform application launcher with React-based plugins
 
-> [!WARNING]
-> The project is no longer being developed.
+> [!NOTE]
+> **Nexra** is an **active fork** of Gauntlet — development continues in this repository.
+> The upstream Gauntlet project is currently inactive; this fork continues maintenance and improvements.
+> Note: the codebase and binaries may still use the `gauntlet` name in places.
+
+**Phase 1: macOS-only.**
+
+## Quickstart (macOS)
+
+Prereqs: see [CONTRIBUTING.md](CONTRIBUTING.md) (Node.js 22, Rust stable, protobuf, …)
+
+```bash
+npm ci
+npm run build
+cargo build --workspace --locked
+```
+
+Roadmap: see [ROADMAP.md](ROADMAP.md).  
+Contributing: see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ![image](https://github.com/user-attachments/assets/81339462-9cc3-469e-8cdc-ca74918bceab)
 
