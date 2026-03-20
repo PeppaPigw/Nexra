@@ -1,6 +1,25 @@
-.idea
+.idea/
+.vscode/
 /target
 /node_modules
+**/node_modules/
+**/dist/
+**/disttypes/
+**/component_model.json
 /.direnv
 result
+.worktrees
+
+# Local environment files
+.env
+.env.*
+
+# OS and editor junk
 .DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.orig
+*.rej
